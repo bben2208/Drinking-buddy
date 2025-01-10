@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="navContainer">
+        <nav>
+          <ul>
+            <div id="logoContainer">
+                <img id="smallLogo" src="DALL·E 2025-01-05 15.49.34 - A modern and minimalist logo design for 'Drink Buddy', featuring a stylized cocktail glass with a fun, casual vibe. The logo has vibrant colors like g.webp" alt="Drink Buddy Logo" id="drinkBuddyLogo">
+              </div>
+              <section id="hologram" style="display: none;">
+                <img id="hologramImage" src="" alt="Cocktail Image">
+                <h2 id="hologramName"></h2>
+                <p id="hologramDescription"></p>
+              </section>
+              <li id="push" class="rightCorner">
+                <button id="dunnoWhatButton">Random
+                  <i class="fas fa-cocktail"></i>
+                </button>
+              </li>
+              
+              
+              <div id="cocktailDisplay" style="margin-top: 20px; text-align: center; color: #333;">
+                <!-- Selected item will display here -->
+              </div>
+              
+              <li id="glassButton" class="rightCorner">
+                <div class="dropdown">
+                  <button id="glassDropdownButton">
+                    <i class="fas fa-glass-martini-alt"></i>
+                  </button>
+                  <div class="dropdown-content" id="glassDropdownContent">
+                    <ul>
+                      <li class="dropdown-link" data-ingredient="rum">Rum</li>
+                      <li class="dropdown-link" data-ingredient="gin">Gin</li>
+                      <li class="dropdown-link" data-ingredient="tequila">Tequila</li>
+                      <li class="dropdown-link" data-ingredient="vodka">Vodka</li>
+                      <li class="dropdown-link" data-ingredient="non-alcoholic">Non-alcoholic</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              
+              <section id="drinksSection">
+                <div id="drinksContainer"></div>
+              </section>
+              
+              
+              <li id="A-ZButtonNew" class="rightCornerNew">
+                <div class="dropdownNew">
+                  <button id="A-ZDropdownButtonNew">
+                    <i class="fas fa-sort-alpha-down"></i> <!-- Add an icon for A-Z -->
+                  </button>
+                  <div class="dropdown-contentNew" id="A-ZDropdownContentNew">
+                    <ul>
+                        <li class="dropdown-linkNew" data-ingredient="A">A</li>
+                        <li class="dropdown-linkNew" data-ingredient="B">B</li>
+                        <li class="dropdown-linkNew" data-ingredient="C">C</li>
+                        <li class="dropdown-linkNew" data-ingredient="D">D</li>
+                        <li class="dropdown-linkNew" data-ingredient="E">E</li>
+                        <li class="dropdown-linkNew" data-ingredient="F">F</li>
+                        <li class="dropdown-linkNew" data-ingredient="G">G</li>
+                        <li class="dropdown-linkNew" data-ingredient="H">H</li>
+                        <li class="dropdown-linkNew" data-ingredient="I">I</li>
+                        <li class="dropdown-linkNew" data-ingredient="J">J</li>
+                        <li class="dropdown-linkNew" data-ingredient="K">K</li>
+                        <li class="dropdown-linkNew" data-ingredient="L">L</li>
+                        <li class="dropdown-linkNew" data-ingredient="M">M</li>
+                        <li class="dropdown-linkNew" data-ingredient="N">N</li>
+                        <li class="dropdown-linkNew" data-ingredient="O">O</li>
+                        <li class="dropdown-linkNew" data-ingredient="P">P</li>
+                        <li class="dropdown-linkNew" data-ingredient="Q">Q</li>
+                        <li class="dropdown-linkNew" data-ingredient="R">R</li>
+                        <li class="dropdown-linkNew" data-ingredient="S">S</li>
+                        <li class="dropdown-linkNew" data-ingredient="T">T</li>
+                        <li class="dropdown-linkNew" data-ingredient="U">U</li>
+                        <li class="dropdown-linkNew" data-ingredient="V">V</li>
+                        <li class="dropdown-linkNew" data-ingredient="W">W</li>
+                        <li class="dropdown-linkNew" data-ingredient="X">X</li>
+                        <li class="dropdown-linkNew" data-ingredient="Y">Y</li>
+                        <li class="dropdown-linkNew" data-ingredient="Z">Z</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+                          <li id="searchButon" class="rightCorner"><button>Search</button></li>
+          </ul>
+        </nav>
+      </div>
+      
+</div>
+    <div id="mainContainer">
+
+<div id="textContainer">
+    <h1>Your own genious drinking buddy</h1>
+    <p>Search through our database of
+
+        up to 100 drinks</p>
+        <button id="searchButton">Search</button>
+</div>
+
+<div id="pictureContainer">
+
+<img src="DALL·E 2025-01-06 15.08.37 - A highly detailed and artistic illustration of a refreshing cocktail drink in a tall glass. The glass is filled with ice cubes, fresh mint leaves, lim.webp" alt="glass picture">
+
+
+</div>
+
+
+
+    </div>
+
+
+    <script src="main.js" type="text/javascript"></script>
+</body>
+</html>
+
+
+<!-- <div class="dropdown">
+   
+    <div class="dropdown-content">
+    <span>Rum</span>
+    <span>Gin</span>
+    <span>Tequila</span>
+    <span>Vodka</span>
+    <span>Non-alcoholic</span>
+    </div>
+  </div> -->

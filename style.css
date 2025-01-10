@@ -1,0 +1,382 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+*******************************************/
+
+body {
+    background-color: rgb(190, 213, 173);
+}
+
+/******************************************
+/* LAYOUT
+*******************************************/
+
+nav {
+    display: flex;
+}
+
+/* General UL Styling */
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 0;
+    background-color: var(--background-color);
+    height: 60px;
+}
+
+/******************************************
+/* LOGO CONTAINER
+*******************************************/
+
+#logoContainer {
+    margin-right: auto;
+    max-width: 2REM; /* Pushes buttons to the right */
+    text-align: center;
+    margin: 20px 0;
+}
+
+#smallLogo, #drinkBuddyLogo {
+    padding-top: 1.4rem;
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/******************************************
+/* BUTTONS STYLING
+*******************************************/
+
+.rightCorner button, #A-ZDropdownButtonNew {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 50px; /* Rounded corners for pill shape */
+    padding: 10px 20px; /* Add padding for a sleek look */
+    font-size: 14px;
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer on hover */
+    transition: all 0.3s ease-in-out; /* Smooth animations */
+    margin-left: 10px; /* Spacing between buttons */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.rightCorner button:hover, #A-ZDropdownButtonNew:hover {
+    background-color: #45a049; /* Darker green */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+.rightCorner button:active, #A-ZDropdownButtonNew:active {
+    transform: scale(0.95); /* Shrinks slightly */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+}
+
+#push {
+    margin-left: auto; /* Pushes the first button to the right */
+}
+
+#searchButton:hover{
+    background-color: #4CAF50;
+    border-radius: 12px;
+    color: #f1f1f1;
+}
+
+/******************************************
+/* MAIN CONTAINER
+*******************************************/
+
+#mainContainer {
+    display: flex;
+    margin-top: 8rem;
+   
+}
+
+/******************************************
+/* TEXT CONTAINER
+*******************************************/
+
+#textContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center align text */
+    padding: 30px; /* Space around content */
+    border-radius: 20px; /* Rounded corners */
+}
+
+#textContainer button {
+    width: 15rem;
+    height: 5rem;
+    /* border-radius: 12px;
+    background-color: #4CAF50; Green background */
+}
+
+/* Heading Styling */
+#textContainer h1 {
+    font-size: 4rem; /* Larger heading size */
+    font-weight: 600; /* Semi-bold */
+    margin-bottom: 20px; /* Space below heading */
+    color: #333; /* Dark text color */
+}
+
+/* Paragraph Styling */
+#textContainer p {
+    font-size: 2rem; /* Regular size */
+    color: #555; /* Gray text */
+    margin-bottom: 20px; /* Space below paragraph */
+}
+
+/******************************************
+/* PICTURE CONTAINER
+*******************************************/
+
+#pictureContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20rem;
+}
+
+#pictureContainer img {
+    width: 75%;
+    margin-left: 20px;
+    padding-top: 30px;
+}
+
+/******************************************
+/* HOLOGRAM
+*******************************************/
+
+#hologram {
+    text-align: center;
+    margin-top: 300px;
+    margin-left: 33rem;
+    padding: 15px;
+    max-width: 15rem;
+    position: inherit;
+    background-color: #4CAF50; /* Same green as before */
+    border-radius: 12px; /* Rounded corners */
+}
+
+#hologram img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+#hologram h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+#hologram p {
+    font-size: 16px;
+    color: #555;
+}
+
+/******************************************
+/* COCKTAIL DISPLAY
+*******************************************/
+
+#cocktailDisplay img {
+    width: 200px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+#cocktailDisplay h2 {
+    font-size: 18px;
+    color: #4CAF50;
+}
+
+#cocktailDisplay p {
+    font-size: 14px;
+    color: #555;
+}
+
+/******************************************
+/* DROPDOWN STYLING
+*******************************************/
+
+.dropdown {
+    position: relative;
+    
+}
+
+.dropdown button {
+    background-color: #4CAF50; /* Same green as before */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Circular button */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    z-index: 2; /* Ensure button is above other elements */
+}
+
+.dropdown button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Dropdown Content Styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4CAF50; /* Same green as before */
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    max-width: 30rem;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 0;
+    z-index: 2; /* Ensure button is above other elements */
+}
+
+
+.dropdown-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #4CAF50; /* Same green as before */
+    border-radius: 12px;
+}
+
+.dropdown-content ul li {
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    background-color: #4CAF50; /* Same green as before */
+    border-radius: 12px;
+   
+}
+
+.dropdown-content ul li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/******************************************
+/* DRINKS SECTION
+*******************************************/
+
+#drinksSection {
+    display: none;
+    margin-top: 20px;
+    display: flex;
+   flex-direction: row;
+    justify-content: center;
+    background-color: #4CAF50; /* Same green as before */
+
+}
+
+.drink {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.drink img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.drink h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.drink p {
+    font-size: 14px;
+    color: #555;
+}
+
+/******************************************
+/* RIGHT CORNER NEW
+*******************************************/
+
+.rightCornerNew {
+    position: relative;
+    display: inline-block;
+}
+
+/******************************************
+/* DROPDOWN NEW
+*******************************************/
+
+.dropdownNew {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-contentNew {
+    display: none;
+    /* display: ; */
+    position: absolute;
+    background-color: #4CAF50; /* Green */
+    border-radius: 12px;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    max-height: 300px; /* Adjust the height as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+    z-index: 2; /* Ensure button is above other elements */
+}
+
+
+.dropdown-contentNew ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-contentNew li {
+    padding: 8px 16px;
+    text-align: center;
+    border-right: solid 1px #333;
+}
+
+.dropdown-contentNew li:hover {
+    background-color: #ddd;
+}
+
+.dropdownNew:hover .dropdown-contentNew {
+    display: block;
+}
+
