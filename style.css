@@ -67,7 +67,7 @@
       flex-direction: row; /* Default flex-direction for larger screens */
     }
   }
-@media (max-width: 375px) {
+@media (max-width: 477px) {
     #logoContainer {
         display: none 
     }
