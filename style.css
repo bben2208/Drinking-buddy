@@ -66,10 +66,23 @@
     #mainContainer {
       flex-direction: row; /* Default flex-direction for larger screens */
     }
+
   }
+
+  @media (max-width: 477px) {
+    body{
+        width: 477px;
+    }
+}
 @media (max-width: 477px) {
     #logoContainer {
         display: none 
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5em;
     }
 }
   
