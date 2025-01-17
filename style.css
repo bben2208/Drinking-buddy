@@ -3,6 +3,40 @@
     box-sizing: border-box;
 }
 
+@media (min-width: 401px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
+  @media (max-width: 360px) {
+    #mainContainer {
+      padding: 0.625em 0.625em 0 0.312em;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  
+    #pictureContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  /* Medium Screens (361px to 766px): Column-reverse */
+  @media (max-width: 766px) and (min-width: 361px) {
+    #mainContainer {
+      flex-direction: column-reverse;
+      align-items: center; /* Ensure centered alignment */
+    }
+  }
+  
+  /* Large Screens (767px and up): Row layout */
+  @media (min-width: 767px) {
+    #mainContainer {
+      flex-direction: row; /* Default flex-direction for larger screens */
+    }
+  }
+
 /* Clear fix hack */
 .clearfix:after {
     content: ".";
@@ -21,9 +55,7 @@
 /* BASE STYLES
 *******************************************/
 
-body {
-    background-color: rgb(190, 213, 173);
-}
+
 
 /******************************************
 /* LAYOUT
@@ -99,7 +131,6 @@ ul {
 #searchButton:hover{
     background-color: #4CAF50;
     border-radius: 12px;
-    color: #f1f1f1;
 }
 
 /******************************************
@@ -109,7 +140,7 @@ ul {
 #mainContainer {
     display: flex;
     margin-top: 8rem;
-   
+
 }
 
 /******************************************
@@ -139,15 +170,14 @@ ul {
 #textContainer h1 {
     font-size: 4rem; /* Larger heading size */
     font-weight: 600; /* Semi-bold */
-    margin-bottom: 20px; /* Space below heading */
+    margin-bottom: 0,5em; /* Space below heading */
     color: #333; /* Dark text color */
 }
-
 /* Paragraph Styling */
 #textContainer p {
     font-size: 2rem; /* Regular size */
     color: #555; /* Gray text */
-    margin-bottom: 20px; /* Space below paragraph */
+    margin-bottom: 1em; /* Space below paragraph */
 }
 
 /******************************************
@@ -158,14 +188,20 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 20rem;
+   
 }
 
 #pictureContainer img {
     width: 75%;
-    margin-left: 20px;
-    padding-top: 30px;
+    margin-left: 1.25em;
+    padding-top: 1.9em;
 }
+#searchButton:hover{
+    background-color: #4CAF50;
+    border-radius: 12px;
+    color: #f1f1f1;
+}
+
 
 /******************************************
 /* HOLOGRAM
