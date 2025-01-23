@@ -3,6 +3,9 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #fffdd1;
+}
 /* Small Screens (up to 360px): Adjust padding and layout */
 @media (max-width: 360px) {
     #mainContainer {
@@ -34,11 +37,7 @@
 }
 
 /* Additional Media Query for screens wider than 401px */
-@media (min-width: 101px) {
-    body {
-        background-color: lightgreen;
-    }
-}
+
   @media (max-width: 360px) {
     #mainContainer {
       padding: 0.625em 0.625em 0 0.312em;
@@ -111,20 +110,23 @@
 /* LAYOUT
 *******************************************/
 
-nav {
+#nav-container {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+ 
 }
 
 /* General UL Styling */
-ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0.5rem 0;
-    background-color: var(--background-color);
-    height: 60px;
-}
+
 
 /******************************************
 /* LOGO CONTAINER
@@ -138,18 +140,16 @@ ul {
 }
 
 #smallLogo, #drinkBuddyLogo {
-    padding-top: 1.4rem;
-    max-width: 150px;
+    max-width: 80px;
     height: auto;
-    display: block;
-    margin: 0 auto;
+   
 }
 
 /******************************************
 /* BUTTONS STYLING
 *******************************************/
 
-.rightCorner button, #A-ZDropdownButtonNew {
+.nav-button,#A-ZDropdownButtonNew {
     background-color: #4CAF50; /* Green background */
     color: white; /* White text */
     border: none;
@@ -159,24 +159,21 @@ ul {
     font-weight: bold; /* Bold text */
     cursor: pointer; /* Pointer on hover */
     transition: all 0.3s ease-in-out; /* Smooth animations */
-    margin-left: 10px; /* Spacing between buttons */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-.rightCorner button:hover, #A-ZDropdownButtonNew:hover {
+.nav-button:hover, #A-ZDropdownButtonNew:hover {
     background-color: #45a049; /* Darker green */
     transform: scale(1.1); /* Slightly enlarge on hover */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
 }
 
-.rightCorner button:active, #A-ZDropdownButtonNew:active {
+.nav-button:active, #A-ZDropdownButtonNew:active {
     transform: scale(0.95); /* Shrinks slightly */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow */
 }
 
-#push {
-    margin-left: auto; /* Pushes the first button to the right */
-}
+ 
 
 #searchButton:hover{
     background-color: #4CAF50;
@@ -258,14 +255,13 @@ ul {
 *******************************************/
 
 #hologram {
+    left: 50%;
     text-align: center;
-    margin-top: 300px;
-    margin-left: 33rem;
     padding: 15px;
     max-width: 15rem;
-    position: inherit;
-    background-color: #4CAF50; /* Same green as before */
-    border-radius: 12px; /* Rounded corners */
+    position: absolute;
+    background-color: #4CAF50;
+    border-radius: 12px;
 }
 
 #hologram img {
@@ -379,14 +375,18 @@ ul {
 /* DRINKS SECTION
 *******************************************/
 
-#drinksSection {
-    display: none;
-    margin-top: 20px;
+#drinksContainer{
+    background-color: gray;
+    position: absolute;
     display: flex;
-   flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    background-color: #4CAF50; /* Same green as before */
-
+}
+#close-button{
+    display: none;
+    position: absolute;
+    top: 11.5rem;
+    right: 1rem;
 }
 
 .drink {

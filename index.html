@@ -15,31 +15,25 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="navContainer">
-        <nav>
-          <ul>
-            <div id="logoContainer">
+   
+       
+         <nav id="nav-container">
+           
                 <img id="smallLogo" src="DALL·E 2025-01-05 15.49.34 - A modern and minimalist logo design for 'Drink Buddy', featuring a stylized cocktail glass with a fun, casual vibe. The logo has vibrant colors like g.webp" alt="Drink Buddy Logo" id="drinkBuddyLogo">
-              </div>
-              <section id="hologram" style="display: none;">
-                <img id="hologramImage" src="" alt="Cocktail Image">
-                <h2 id="hologramName"></h2>
-                <p id="hologramDescription"></p>
-              </section>
-              <li id="push" class="rightCorner">
-                <button id="dunnoWhatButton">Random
+           
+             <ul class="nav-links"> 
+              <li>
+                <button  class="nav-button" id="dunnoWhatButton">Random
                   <i class="fas fa-cocktail"></i>
                 </button>
               </li>
               
               
-              <div id="cocktailDisplay" style="margin-top: 20px; text-align: center; color: #333;">
-                <!-- Selected item will display here -->
-              </div>
+             
               
-              <li id="glassButton" class="rightCorner">
+              <li id="glassButton">
                 <div class="dropdown">
-                  <button id="glassDropdownButton">
+                  <button  class="nav-button" id="glassDropdownButton">
                     <i class="fas fa-glass-martini-alt"></i>
                   </button>
                   <div class="dropdown-content" id="glassDropdownContent">
@@ -54,14 +48,14 @@
                 </div>
               </li>
               
-              <section id="drinksSection">
-                <div id="drinksContainer"></div>
-              </section>
+             
+               
+             
               
               
-              <li id="A-ZButtonNew" class="rightCornerNew">
+              <li id="A-ZButtonNew" >
                 <div class="dropdownNew">
-                  <button id="A-ZDropdownButtonNew">
+                  <button class="nav-button" id="A-ZDropdownButtonNew">
                     <i class="fas fa-sort-alpha-down"></i> <!-- Add an icon for A-Z -->
                   </button>
                   <div class="dropdown-contentNew" id="A-ZDropdownContentNew">
@@ -96,13 +90,23 @@
                   </div>
                 </div>
               </li>
-                          <li id="searchButon" class="rightCorner"><button>Search</button></li>
-          </ul>
-        </nav>
-      </div>
-      
+                          <li id="searchButon" ><button class="nav-button">Search</button></li>
+         
+       
+     
+           </ul>
 </div>
+</nav>
     <div id="mainContainer">
+      <section id="hologram" style="display: none;">
+        <img id="hologramImage" src="" alt="Cocktail Image">
+        <h2 id="hologramName"></h2>
+        <p id="hologramDescription"></p>
+      </section>
+
+      <div id="cocktailDisplay" style="margin-top: 20px; text-align: center; color: #333;">
+        <!-- Selected item will display here -->
+      </div>
 
 <div id="textContainer">
     <h1>Your own genious drinking buddy</h1>
@@ -110,6 +114,10 @@
 
         up to 100 drinks</p>
         <button id="searchButton">Search</button>
+</div>
+<button id="close-button">Close</button>
+<div id="drinsContainer">
+ 
 </div>
 
 <div id="pictureContainer">
@@ -129,7 +137,6 @@
 </html>
 
 
-<!-- <div class="dropdown">
    
     <div class="dropdown-content">
     <span>Rum</span>
