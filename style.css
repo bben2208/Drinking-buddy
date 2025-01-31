@@ -5,6 +5,7 @@
 
 body{
     background-color: #fffdd1;
+    font-family: 'Poppins', sans-serif !important;
 }
 /* Small Screens (up to 360px): Adjust padding and layout */
 @media (max-width: 360px) {
