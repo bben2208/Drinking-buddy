@@ -140,7 +140,7 @@ body{
 }
 
 #smallLogo, #drinkBuddyLogo {
-    max-width: 80px;
+    max-width: 130px;
     height: auto;
    
 }
@@ -207,10 +207,11 @@ body{
 }
 
 #textContainer button {
-    width: 15rem;
-    height: 5rem;
-    /* border-radius: 12px;
-    background-color: #4CAF50; Green background */
+   
+        width: 15rem;
+        height: 5rem;
+        background-color: #4CAF50;
+        border-radius: 50px;
 }
 
 /* Heading Styling */
@@ -239,15 +240,15 @@ body{
 }
 
 #pictureContainer img {
-    width: 75%;
-    margin-left: 1.25em;
+    width: 95%;
+    margin-left: 1em;
     padding-top: 1.9em;
 }
-#searchButton:hover{
+/* #searchButton:hover{
     background-color: #4CAF50;
     border-radius: 12px;
     color: #f1f1f1;
-}
+} */
 
 
 /******************************************
@@ -376,6 +377,7 @@ body{
 *******************************************/
 
 #drinksContainer{
+    right: 20%;
     background-color: gray;
     position: absolute;
     display: flex;
@@ -383,10 +385,13 @@ body{
     justify-content: center;
 }
 #close-button{
+    border-radius: 12px;
     display: none;
     position: absolute;
     top: 11.5rem;
     right: 1rem;
+    background-color: #4CAF50;
+    
 }
 
 .drink {
